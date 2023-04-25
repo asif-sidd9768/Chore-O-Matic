@@ -21,7 +21,6 @@ export const AddTodoCard = ({popupVisible, handlePopup}) => {
       todoDispatch(addTodoSuccess(data))
       showNotification({type: 'success', message:"Added todo!"})
       dispatch({type:"HIDE_POPUP"})
-      // handlePopup()
     }catch(error){
       todoDispatch(addTodoFailed(error))
       showNotification({type: 'error', message:error.response.data})

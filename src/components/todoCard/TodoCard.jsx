@@ -4,7 +4,7 @@ import { UserContext } from "../../contexts/UserContext"
 import { deleteTodoService, editTodoService } from "../../services/todoService"
 import { clearMessage, setErrorMessage, setSuccessMessage } from "../../actions/notificationActions"
 import { TodoContext } from "../../contexts/TodoContext"
-import { EditTodoRequest, EditTodoSuccess, deleteTodoFailed, deleteTodoRequest, deleteTodoSuccess } from "../../actions/todoActions"
+import { editTodoRequest, editTodoSuccess, deleteTodoFailed, deleteTodoRequest, deleteTodoSuccess, editTodoFailed } from "../../actions/todoActions"
 import { NotificationContext } from "../../contexts/NotificationContext"
 
 export const TodoCard = (todo) => {
@@ -15,12 +15,13 @@ export const TodoCard = (todo) => {
   const createDate = new Date(creationDate)
 
   const handleTodoEdit = async (todoId) => {
-    todoDispatch(EditTodoRequest)
+    todoDispatch(editTodoRequest())
     try{
       const { data } = await editTodoService(todoId, state.user.userId)
-      todoDispatch(EditTodoSuccess(todoId))
+      todoDispatch(editTodoSuccess(todoId))
       showNotification({type: 'success', message:"Updated todo!"})
     }catch(error){
+      todoDispatch(editTodoFailed(error))
       showNotification({type: 'error', message:error.response.data})
     }
   }

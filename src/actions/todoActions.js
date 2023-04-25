@@ -17,16 +17,16 @@ export const addTodoFailed = (error) => ({
   payload: error
 });
 
-export const EditTodoRequest = () => ({
+export const editTodoRequest = () => ({
   type:"EDIT_TODO_REQUEST",
 })
 
-export const EditTodoSuccess = (id) => ({
+export const editTodoSuccess = (id) => ({
   type: "EDIT_TODO_SUCCESS",
   payload: id
 });
 
-export const EditTodoFailed = (error) => ({
+export const editTodoFailed = (error) => ({
   type: "EDIT_TODO_FAILURE",
   payload: error
 });

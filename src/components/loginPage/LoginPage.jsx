@@ -15,6 +15,8 @@ export const LoginPage = () => {
   const [userId, setUserId] = useState("");
   const [generatedID, setGeneratedID] = useState("");
 
+  // console.log('state == ', state, todoState)
+
   const handleLogin = async () => {
     if (!userId) {
       return;

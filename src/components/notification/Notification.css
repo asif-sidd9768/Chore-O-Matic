@@ -9,6 +9,36 @@
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
+.loader-container {
+  position: absolute;
+  z-index: 1;
+  right: 3%;
+  bottom: 6%;
+  color: white;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+
+.loader {
+  border: 8px solid #853d3d;
+  border-radius: 50%;
+  border-top: 8px solid teal;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .notification-success {
   background-color: rgb(41, 162, 41);
 }
