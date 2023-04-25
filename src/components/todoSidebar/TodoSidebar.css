@@ -1,0 +1,76 @@
+.logo {
+  margin: 1rem;
+  max-width: 90%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+}
+
+.sidebar-container {
+  margin: 0 auto;
+}
+
+.avatar-img {
+  margin: 1.5rem 2rem 0 2rem;
+  max-width: 80%;
+}
+
+.sidebar-greet{
+  text-align: center;
+  font-size: 24px;
+  font-family: cursive;
+}
+
+.sidebar-welcome-text{
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.todo-details-table {
+  position: relative;
+  margin: 3rem auto;
+  text-align: center;
+  z-index: -1;
+}
+
+.todo-details-item:nth-child(1){
+  background-color: rgb(101, 11, 11);
+  border-bottom: 1px solid white;
+  border-radius: 10px 10px 0 0;
+}
+
+.todo-details-item:last-child{
+  border-radius: 0 0 10px 10px;
+}
+
+.todo-details-item {
+  text-align: left;
+  padding: 0.5rem;
+  font-size: 22px;
+  background-color: teal;
+  color: rgb(230, 228, 228);
+  position: relative;
+  z-index: 0;
+}
+
+.todo-details-item-count {
+  float: right;
+  padding-right: 4px;
+}
+
+.todo-details-item-count::before{
+  content: "|";
+  margin: 0 1rem;
+  position: absolute;
+  right: 2.5rem;
+}
+
+.sidebar-date-and-time {
+  text-align: center;
+}
+
+.date-and-time-text {
+  font-size: 14px;
+  color: #666666;
+  margin: 1.5rem 0 0 0;
+}

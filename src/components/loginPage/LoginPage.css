@@ -1,0 +1,120 @@
+.login-bg {
+  height: 100vh;
+  width: 100%;
+  background: rgb(106,193,194);
+  background: linear-gradient(0deg, rgba(106,193,194,1) 0%, rgba(214,211,204,1) 100%); 
+  position: relative;
+}
+
+.login-container {
+  width: 30%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 1rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  padding: 1rem;
+}
+
+.login-logo {
+  max-width: 80%;
+  display: block;
+  margin: 0.5rem auto 2rem auto;
+}
+
+.login-form {
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.login-user-id-label {
+  font-size: 12px;
+  margin: 0.5rem 0;
+  color: #666666;
+  text-align: start;
+}
+
+.login-user-id-input {
+  padding: 8px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid gray;
+  width: 100%;
+  outline: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: 0.2s;
+}
+
+.login-user-id-input:focus {
+  border-bottom: 2px solid gray;
+}
+
+.login-submit-btn {
+  margin: 2rem 0;
+  width: 50%;
+  padding: 8px;
+  background: rgb(52,101,102);
+  background: radial-gradient(circle, rgba(52,101,102,1) 0%, rgba(214,211,204,1) 100%); 
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.login-submit-btn:hover {
+  font-size: 15px;
+  width: 80%;
+  background: rgb(52,101,102);
+  background: radial-gradient(circle, rgba(52,101,102,1) 0%, rgba(214,211,204,1) 100%); 
+}
+
+.login-page-register {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 0 3rem;
+}
+
+.login-register-btn {
+  margin: 1rem 0;
+  width: 30%;
+  padding: 8px;
+  border: none;
+  border-bottom: 2px solid rgb(52,101,102);
+  background-color: rgba(255, 255, 255, 0.1);
+  /* background: radial-gradient(circle, rgba(52,101,102,1) 0%, rgba(214,211,204,1) 100%);  */
+  color: teal;
+  font-size: 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.login-register-btn:hover:enabled {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(52,101,102);
+}
+.login-register-btn:disabled {
+  cursor:auto;
+  background-color: rgba(52,101,102, 0.4);
+  color: white;
+  border: none;
+}
+
+.login-page-register-id-text {
+  color: #777777;
+  font-size: 13px;
+  text-align: start;
+}
+
+.login-page-register-id {
+  color: teal;
+  font-size: 14px;
+  text-decoration: underline;
+}

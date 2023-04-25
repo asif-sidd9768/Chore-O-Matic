@@ -1,0 +1,23 @@
+.todos-container {
+  display: flex;
+}
+
+.todos-sidebar {
+  width: 20%;
+  max-height: 100vh;
+  padding: 1rem 3rem;
+  border-right: 5px solid rgba(152, 142, 142, 0.3);
+}
+
+.todo-cards-container {
+  display: grid;
+  row-gap: 0;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.todo-section-2 {
+  width: 80%;
+  padding: 1rem 0 0 0;
+}
