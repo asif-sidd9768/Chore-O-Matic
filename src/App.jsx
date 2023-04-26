@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { Routes, Route } from 'react-router-dom';
-import { Login } from "./pages/login";
+import { Login } from "./pages/login/login";
 import "./styles.css";
 import { UserContext } from "./contexts/UserContext";
-import { Todos } from "./pages/todos";
+import { Todos } from "./pages/todos/todos";
 import { Notification } from "./components/notification/Notification";
 import { ErrorPage } from "./components/errorPage/ErrorPage";
 import { NotificationContext } from "./contexts/NotificationContext";

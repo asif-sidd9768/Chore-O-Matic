@@ -1,12 +1,14 @@
 import { useContext } from "react";
-import { UserContext } from "../contexts/UserContext";
+import { UserContext } from "../../contexts/UserContext";
+
+import { TodoCard } from "../../components/todoCard/TodoCard";
+import { TodoSidebar } from "../../components/todoSidebar/TodoSidebar";
+import { TodoNavbar } from "../../components/todoNavbar/TodoNavbar";
+import { EmptyTodoList } from "../../components/emptyTodoList/EmptyTodoList";
+import { TodoContext } from "../../contexts/TodoContext";
 
 import "./todos.css"
-import { TodoCard } from "../components/todoCard/TodoCard";
-import { TodoSidebar } from "../components/todoSidebar/TodoSidebar";
-import { TodoNavbar } from "../components/todoNavbar/TodoNavbar";
-import { EmptyTodoList } from "../components/emptyTodoList/EmptyTodoList";
-import { TodoContext } from "../contexts/TodoContext";
+
 export const Todos = () => {
   const { todoState, todoDispatch } = useContext(TodoContext)
 
