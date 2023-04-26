@@ -74,9 +74,13 @@
 }
 
 .login-page-register {
+  position: absolute;
   text-align: center;
-  margin: 2rem 0;
+  /* margin: 1rem 0; */
   padding: 0 3rem;
+  bottom: 1rem;
+  right: 0;
+  left: 0;
 }
 
 .login-register-btn {

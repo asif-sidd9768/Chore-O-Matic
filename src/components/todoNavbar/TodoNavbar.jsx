@@ -34,7 +34,7 @@ export const TodoNavbar = () => {
     <div className="navbar">
       <nav className="nav-container">
         <button className={`nav-item ${isActive === "all" ? "nav-item-active" : ""}`} onClick={() => handleFilter("all")}>All todos</button>
-        {state.user.todos.length !== 0 && <> <button className={`nav-item ${isActive === "pending" ? "nav-item-active" : ""}`} onClick={() => handleFilter('pending')}>Pending</button>
+        {todoState.filteredTodos.length !== 0 && <> <button className={`nav-item ${isActive === "pending" ? "nav-item-active" : ""}`} onClick={() => handleFilter('pending')}>Pending</button>
         <button className={`nav-item ${isActive === "completed" ? "nav-item-active" : ""}`} onClick={() => handleFilter('completed')}>Completed</button></>}
       </nav>
       <div className="nav-right">

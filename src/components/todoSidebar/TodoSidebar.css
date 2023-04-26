@@ -7,11 +7,12 @@
 
 .sidebar-container {
   margin: 0 auto;
+  max-height: 100%;
 }
 
 .avatar-img {
-  margin: 1.5rem 2rem 0 2rem;
-  max-width: 80%;
+  margin: 1rem 3rem 0 3rem;
+  max-width: 60%;
 }
 
 .sidebar-greet{
@@ -28,7 +29,7 @@
 
 .todo-details-table {
   position: relative;
-  margin: 3rem auto;
+  margin: 2rem auto;
   text-align: center;
   z-index: -1;
 }
